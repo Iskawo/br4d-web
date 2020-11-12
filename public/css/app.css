@@ -548,7 +548,7 @@ h1 {
 }
 
 a {
-  color: #ffffff;
+  color: var(--font-color);
   cursor: pointer;
   text-decoration: none;
 }
