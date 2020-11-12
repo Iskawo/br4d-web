@@ -364,6 +364,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  color: var(--font-color);
 }
 
 h1,
@@ -371,7 +372,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+div,
+.article-content,
+.title,
+.subtitle {
+  color: var(--font-color);
   font-size: 100%;
   font-weight: normal;
 }
@@ -462,6 +468,7 @@ pre {
   font-family: "Ubuntu Mono", monospace;
 }
 :root {
+  color: var(--font-color);
   background-color: var(--bg-color);
   --secondary-color: #ffffff;
   --font-color: #424242;
@@ -4705,6 +4712,7 @@ a.tag:hover {
 .title,
 .subtitle {
   word-break: break-word;
+  color: var(--font-color);
 }
 
 .title em,
@@ -4748,6 +4756,32 @@ a.tag:hover {
 .title:not(.is-spaced) + .subtitle {
   margin-top: -1.25rem;
 }
+
+h1.subtitle,
+div.title,
+div.box,
+div,
+.subtitle,
+.title,
+.title.is-1,
+.title.is-2,
+.title.is-3,
+.title.is-4,
+.title.is-5,
+.title.is-6,
+.title.is-7 {
+  color: var(--font-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+u {
+  color: var(--font-color);
+}
+
 
 .title.is-1 {
   font-size: 3rem;

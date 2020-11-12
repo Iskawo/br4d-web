@@ -11,58 +11,26 @@
         @include ('layouts.openGraph')
     </head>
     <body>
-        <div class="hero-body">
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-            </label>
-            <em class="spaced">Enable dark theme</em>
-            </div>
-            <figure class="image container" style="height: 512px; width: 512px; background-color: transparent;">
-                <img src="{{ asset('img/profile-png.svg') }}">
-            </figure>
-        </div>
+        @include('layouts.mainTheme')
         <div class="has-text-centered has-text-size-large">
             <div class="tooltip">
                 <a href="/contact/discord" target="_blank"><i class="fab fa-discord"></i></a>
                 <span class="tooltiptext" style="background-color: #C03F4B;"><strong>Discord</strong></span>
             </div>
             <div class="tooltip">
+                <a href="/contact" target="_blank"><i class="far fa-envelope"></i></a>
+                <span class="tooltiptext" style="background-color: #DC8C4C;"><strong>Email</strong></span>
+            </div>
+            <div class="tooltip">
                 <a href="https://github.com/Iskawo" target="_blank"><i class="fab fa-github"></i></a>
-                <span class="tooltiptext" style="background-color: #DC8C4C;"><strong>Github</strong></span>
+                <span class="tooltiptext" style="background-color: #E4A84D;"><strong>Github</strong></span>
             </div>
             <div class="tooltip">
                 <a href="https://twitter.com/xtc_Br4d" target="_blank"><i class="fab fa-twitter"></i></a>
-                <span class="tooltiptext" style="background-color: #E4A84D;"><strong>Twitter</strong></span>
-            </div>
-            <div class="tooltip">
-                <a href="/contact" target="_blank"><i class="far fa-envelope"></i></a>
-                <span class="tooltiptext" style="background-color: #ECBC4D;"><strong>Email</strong></span>
+                <span class="tooltiptext" style="background-color: #ECBC4D;"><strong>Twitter</strong></span>
             </div>
         </div>
         @include('layouts.cookies')
     </body>
-    <script>
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark'); //add this
-            }
-            else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light'); //add this
-            }    
-        }
-        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-        toggleSwitch.addEventListener('change', switchTheme, false);
-    </script>
+    <!-- <script defer src="{{ asset('js/themeSwitch.js') }}"></script> -->
 </html>

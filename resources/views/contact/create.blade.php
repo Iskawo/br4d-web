@@ -12,12 +12,11 @@
         @include ('layouts.openGraph')
     </head>
     <body>
-        @include ('layouts.nav')
-        
+        @include('layouts.theme')
         <section class="hero is-dark-nq-black has-text-centered" id="landing_toggle">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title is-2 has-text-white">Contact me</h1><br /><br />
+                    <h1 class="title is-2">Contact me</h1><br /><br />
                     <div class="container">
                         <div class="content">
                             <form action="/contact" method="POST" class="box">
@@ -74,6 +73,9 @@
                     </div>
                 </div>
             </div>
+         </section>
+         <section class="hero has-text-centered has-text-size-large" id="landing_toggle">
+            <a href="/"><i class="fas fa-home"></i><em style="font-size: 20px;">Return home</em></a>
          </section>
          @include('layouts.cookies')
     </body>
