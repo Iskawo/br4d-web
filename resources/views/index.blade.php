@@ -12,7 +12,7 @@
     </head>
     <body>
         @include('layouts.mainTheme')
-        <div class="has-text-centered has-text-size-large">
+        <div class="has-text-centered is-centered has-text-size-large">
             <div class="tooltip">
                 <a href="/contact/discord" target="_blank"><i class="fab fa-discord"></i></a>
                 <span class="tooltiptext" style="background-color: #C03F4B;"><strong>Discord</strong></span>
