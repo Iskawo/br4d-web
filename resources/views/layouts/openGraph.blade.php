@@ -1,5 +1,5 @@
-<meta name="og:site_name" content="Iskawo"/>
-<meta name="og:title" content="Come stop by!"/>
-<meta name="og:description" content="Programmer, Gamer & Music Producer."/>
-<meta name="og:url" content="https://iskawo.com/"/>
-<meta name="og:image" content="{{ asset('img/card-avatar.png') }}"/>
+<meta name="og:site_name" content="Br4d#0004"/>
+<meta name="og:title" content="Hello there"/>
+<meta name="og:description" content="Come stop by and say hello"/>
+<meta name="og:url" content="https://discordapp.com/users/286509757546758156"/>
+<meta name="og:image" content="{{ asset('img/profile-round-png.png') }}"/>
