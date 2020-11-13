@@ -11,8 +11,6 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <style>
             html, body {
-                background-color: #23272A;
-                color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 100;
                 height: 100vh;
@@ -42,13 +40,15 @@
         </style>
     </head>
     <body>
-        @include ('layouts.nav')
-        <div class="flex-center position-ref full-height">
-            <div class="code">
-                Hey there            </div>
-
-            <div class="message" style="padding: 10px;">
-                This page is coming soon...            </div>
+        @include ('layouts.theme')
+        <div class="hero-body">
+            <figure class="image container is-hidden-mobile" style="height: 512px; width: 512px;">
+                <img src="{{ asset('img/coming-soon.png') }}">
+            </figure>
+            <figure class="image container is-hidden-desktop" style="height: 256px; width: 256px;">
+                <img src="{{ asset('img/coming-soon.png') }}">
+            </figure>
+            @include('layouts.return')
         </div>
         @include('layouts.cookies')
     </body>

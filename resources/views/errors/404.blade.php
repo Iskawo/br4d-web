@@ -17,7 +17,7 @@
 
 <body>
     @include ('layouts.theme')    
-    <div class="page-wrap page-wrap-max-width has-text-centered has-text-white">
+    <div class="page-wrap page-wrap-max-width has-text-centered">
         <main class="article-content" id="maincontent"><br /><br />
             <div class="title">
                 404 Error
@@ -25,9 +25,7 @@
             <h1 class="subtitle">
                 Sorry, we can’t seem to find what you’re looking for.
             </h1>
-            <section class="hero has-text-centered has-text-size-large" id="landing_toggle">
-                <a href="/"><i class="fas fa-home"></i><em style="font-size: 20px;">Return home</em></a>
-            </section>
+            @include('layouts.return')
         </main>
     </div>
 </body>

@@ -29,10 +29,5 @@ Route::prefix('contact')->group(function () {
 /* Permanent redirects */
 Route::permanentRedirect('/projects/invite/veidus', 'https://veidus.com/invite/stable');
 Route::permanentRedirect('/projects/invite/canary', 'https://veidus.com/invite/canary');
-
 Route::permanentRedirect('/discord', 'https://discord.gg/4K4DYM5');
-Route::permanentRedirect('/youtube', 'https://youtube.com/prodbyiskawo');
-Route::permanentRedirect('/soundcloud', 'https://soundcloud.com/prodbyiskawo');
-Route::permanentRedirect('/twitch', 'https://twitch.tv/iskawo');
-Route::permanentRedirect('/donate', 'https://donatebot.io/checkout/617346762285252639');
 /* Permanent redirects */

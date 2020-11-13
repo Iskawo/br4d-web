@@ -14,23 +14,26 @@
         @include('layouts.mainTheme')
         <div class="has-text-centered is-centered has-text-size-large">
             <div class="tooltip">
-                <a href="/contact/discord" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="/contact/discord"><i class="fab fa-discord"></i></a>
                 <span class="tooltiptext" style="background-color: #C03F4B;"><strong>Discord</strong></span>
             </div>
             <div class="tooltip">
-                <a href="/contact" target="_blank"><i class="far fa-envelope"></i></a>
-                <span class="tooltiptext" style="background-color: #DC8C4C;"><strong>Email</strong></span>
+                <a href="/contact"><i class="far fa-envelope"></i></a>
+                <span class="tooltiptext" style="background-color: #C5504B;"><strong>Email</strong></span>
             </div>
             <div class="tooltip">
                 <a href="https://github.com/Iskawo" target="_blank"><i class="fab fa-github"></i></a>
-                <span class="tooltiptext" style="background-color: #E4A84D;"><strong>Github</strong></span>
+                <span class="tooltiptext" style="background-color: #CF6E4C;"><strong>Github</strong></span>
             </div>
             <div class="tooltip">
                 <a href="https://twitter.com/xtc_Br4d" target="_blank"><i class="fab fa-twitter"></i></a>
-                <span class="tooltiptext" style="background-color: #ECBC4D;"><strong>Twitter</strong></span>
+                <span class="tooltiptext" style="background-color: #E4A84D;"><strong>Twitter</strong></span>
+            </div>
+            <div class="tooltip">
+                <a href="/comingsoon"><i class="fas fa-tasks"></i></a>
+                <span class="tooltiptext" style="background-color: #ECBC4D;"><strong>Projects</strong></span>
             </div>
         </div>
         @include('layouts.cookies')
     </body>
-    <!-- <script defer src="{{ asset('js/themeSwitch.js') }}"></script> -->
 </html>

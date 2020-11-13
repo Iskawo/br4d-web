@@ -489,6 +489,10 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+figure, img {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
 .has-text-size-large {
   font-size: 3em;
 }
