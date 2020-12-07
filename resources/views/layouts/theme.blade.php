@@ -1,3 +1,4 @@
+@include('layouts.snow')
 <div class="hero-body">
     <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">

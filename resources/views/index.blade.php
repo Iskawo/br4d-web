@@ -12,7 +12,6 @@
     </head>
     <body>
         @include('layouts.mainTheme')
-        @include('layouts.snow')
         <div class="has-text-centered is-centered has-text-size-large">
             <div class="tooltip">
                 <a href="/contact/discord"><i class="fab fa-discord"></i></a>
