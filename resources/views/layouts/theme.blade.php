@@ -4,7 +4,8 @@
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
     </label>
-    <em class="spaced">Enable dark theme</em>
+    <em class="spaced" id="toggle-text"></em>
+    <h1 id="icon" style="margin-left: 5px;"></h1>
     </div>
 </div>
 <script defer src="{{ asset('js/themeSwitch.js') }}"></script>
