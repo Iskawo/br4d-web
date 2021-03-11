@@ -13,6 +13,7 @@
 
 Route::get('/', 'RouteController@index');
 Route::get('/meow', function () { return view('meow'); });
+Route::get('/woof', function () { return view('woof'); });
 Route::get('/comingsoon', function () { return view('comingsoon'); });
 
 Route::prefix('contact')->group(function () {
