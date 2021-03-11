@@ -16,8 +16,8 @@
             <div class="hero-body has-text-centered">
                 <div class="container">
                     <h1 class="subtitle is-3">Oh no you found my secret dog stash 🐶</h1>
-                    <a href="/woof">
-                        <button href="/woof" class="button is-rounded is-primary" style="background-color: #23272A; border-color: #4dc0b5;">
+                    <a>
+                        <button onclick="generateImage()" class="button is-rounded is-primary" style="background-color: #23272A; border-color: #4dc0b5;">
                             <b>Generate new image</b>
                         </button><br /><br />
                     </a>
@@ -55,6 +55,17 @@
             var html = "<img src=\"" + data[0]["url"] + "\">";
             document.getElementById("image").innerHTML = html;
         });
+        function generateImage() {
+            document.getElementById("image").innerHTML = 
+            [
+                '<br /><br /><br /><br /><br /><br /><br /><br /><br />',
+                '<i class="fas fa-spinner fa-spin" style="font-size: 64px;"></i>'
+            ].join('')
+            req("https://api.thedogapi.com/v1/images/search?size=full", function(data) {
+                var html = "<img src=\"" + data[0]["url"] + "\">";
+                document.getElementById("image").innerHTML = html;
+            });
+        }
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
     </script>
